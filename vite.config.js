@@ -9,6 +9,6 @@ export default defineConfig({
   //   // host: '192.168.1.98',  
   //   port: 5173 
   // } ,
-  base: '/PiSys/',
+  base: '/PiSys',
   
 })
