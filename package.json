@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mesta-jeff.github.io/PiSys/",
+  "homepage": "https://mesta-jeff.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
