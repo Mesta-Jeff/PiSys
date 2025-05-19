@@ -2,8 +2,8 @@
 
 **PiSys** is a dynamic and interactive product management interface built with React. It connects to a public mock API to allow users to display, manage, search, filter, and sort a list of products. This project showcases skills in React, API integration, state management, and user interface design.
 
-**Live Demo:** `[Link to your hosted project on Render, Vercel, Netlify, etc.]`
-**GitHub Repository:** `[Link to your GitHub repository - e.g., https://github.com/Mesta-Jeff/PiSys.git]`
+
+**GitHub Repository:** `[https://github.com/Mesta-Jeff/PiSys.git]`
 
 ## Table of Contents
 
@@ -58,19 +58,7 @@ To build a robust product management interface using React, enabling users to:
     *   Users can navigate through different pages of products.
 *   **Notifications:**
     *   User-friendly toast messages are displayed for success actions.
-    *   Alert/modal prompts are used for error messages.
-
-## Bonus Features (Optional)
-
-*(Only include this section and its items if you implemented them beyond the core/additional features)*
-
-*   **State Management:**
-    *   `[e.g., React Context API / Redux / Zustand / Component State (useState/useReducer)]` for managing application state.
-*   **Responsive Design:**
-    *   The application is designed with considerations for responsiveness. `[e.g., Using CSS Flexbox/Grid, media queries, or a UI library like Tailwind CSS/Material UI if applicable, otherwise state current approach]`
-*   **Loading Indicators & Error Messages:**
-    *   Visual loading indicators (e.g., spinners) are shown during API calls.
-    *   Clear error messages are displayed to the user if an API call fails or if there are issues fetching data (as per the alert/modal strategy).
+    *   SweetAlert2/modal prompts are used for error messages.
 
 ## Tech Stack
 
@@ -78,15 +66,15 @@ To build a robust product management interface using React, enabling users to:
     *   React
     *   JavaScript (ES6+)
     *   HTML5
-    *   CSS3 `[or mention preprocessor like SASS/SCSS or CSS Modules if used]`
-*   **State Management (if applicable):**
-    *   `[e.g., React Context API / Redux / Zustand / Primarily component state with localStorage for persistence]`
-*   **Styling (if applicable):**
-    *   `[e.g., Plain CSS / CSS Modules / Specific UI Library if one was used, e.g., "Ant Design for Modals"]`
+    *   CSS 
+*   **State Management**
+    *   `[Zustand / Primarily component state with localStorage for persistence]`
+*   **Styling **
+    *   `[Plain CSS / CSS Modules / Bootstrap,]`
 *   **API Calls:**
-    *   `[Fetch API / Axios]`
+    *   `[Axios]`
 *   **Notifications:**
-    *   `[e.g., react-toastify / react-hot-toast / Custom solution for toasts and browser `alert()`/custom modals for errors]`
+    *   `[SweetAlert2 & Toast]`
 *   **Routing:**
     *   React Router DOM
 *   **Build Tool:**
