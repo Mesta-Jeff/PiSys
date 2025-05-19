@@ -3,10 +3,8 @@ import Config from '../../helpers/Config'
 import { useOutletContext } from 'react-router-dom';
 import { useProductStore } from '../../utils/productStore';
 import axios from 'axios';
-import CanvasJSReact from '@canvasjs/react-charts';
 
 const titles = "Dashboard";
-const { CanvasJSChart } = CanvasJSReact;
 
 const Dashboard = () => {
 
@@ -73,7 +71,7 @@ const Dashboard = () => {
 
       // Prepare data for the rating chart
       const ratingCounts = validProducts.reduce((acc, product) => {
-        const roundedRating = Math.round(product.rating); // Round ratings to whole numbers for better grouping
+        const roundedRating = Math.round(product.rating);
         acc[roundedRating] = (acc[roundedRating] || 0) + 1;
         return acc;
       }, {});
@@ -108,59 +106,59 @@ const Dashboard = () => {
   }, [fetchData, fetchCategories]);
 
 
-  const priceChartOptions = {
-    animationEnabled: true,
-    title: {
-      text: "Product Prices"
-    },
-    axisY: {
-      prefix: "GHS"
-    },
-    toolTip: {
-      shared: true,
-      content: "{name}: GHS{y}"
-    },
-    legend: {
-      fontSize: 13
-    },
-    data: [{
-      type: "column",
-      showInLegend: true,
-      name: "Price Chart",
-      markerSize: 0,
-      dataPoints: priceChartDataPoints
-    }]
-  };
+  // const priceChartOptions = {
+  //   animationEnabled: true,
+  //   title: {
+  //     text: "Product Prices"
+  //   },
+  //   axisY: {
+  //     prefix: "GHS"
+  //   },
+  //   toolTip: {
+  //     shared: true,
+  //     content: "{name}: GHS{y}"
+  //   },
+  //   legend: {
+  //     fontSize: 13
+  //   },
+  //   data: [{
+  //     type: "column",
+  //     showInLegend: true,
+  //     name: "Price Chart",
+  //     markerSize: 0,
+  //     dataPoints: priceChartDataPoints
+  //   }]
+  // };
 
-  const categoryChartOptions = {
-    animationEnabled: true,
-    title: {
-      text: "Product Categories"
-    },
-    data: [{
-      type: "pie",
-      indexLabel: "{label} ({y})",
-      dataPoints: categoryChartDataPoints
-    }]
-  };
+  // const categoryChartOptions = {
+  //   animationEnabled: true,
+  //   title: {
+  //     text: "Product Categories"
+  //   },
+  //   data: [{
+  //     type: "pie",
+  //     indexLabel: "{label} ({y})",
+  //     dataPoints: categoryChartDataPoints
+  //   }]
+  // };
 
-  const ratingChartOptions = {
-    animationEnabled: true,
-    title: {
-      text: "Product Ratings"
-    },
+  // const ratingChartOptions = {
+  //   animationEnabled: true,
+  //   title: {
+  //     text: "Product Ratings"
+  //   },
 
-    data: [{
-      type: "pie",
-      startAngle: 75,
-      toolTipContent: "<b>{label}</b>: {y}%",
-      showInLegend: "true",
-      legendText: "{label}",
-      indexLabelFontSize: 16,
-      indexLabel: "{label} ({y})",
-      dataPoints: ratingChartDataPoints
-    }]
-  };
+  //   data: [{
+  //     type: "pie",
+  //     startAngle: 75,
+  //     toolTipContent: "<b>{label}</b>: {y}%",
+  //     showInLegend: "true",
+  //     legendText: "{label}",
+  //     indexLabelFontSize: 16,
+  //     indexLabel: "{label} ({y})",
+  //     dataPoints: ratingChartDataPoints
+  //   }]
+  // };
 
 
   return (
@@ -234,7 +232,7 @@ const Dashboard = () => {
         </div>
 
 
-        <div className="row">
+        {/* <div className="row">
           <div className="col-lg-5">
             <div className="card">
               <div className="card-body pt-0">
@@ -265,7 +263,7 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
 

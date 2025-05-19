@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mesta-jeff.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,8 +12,6 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@canvasjs/react-charts": "^1.0.2",
-    "@canvasjs/react-stockcharts": "^1.0.2",
     "axios": "^1.9.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -24,7 +21,7 @@
     "react-dom": "^19.1.0",
     "react-router-dom": "^6.30.0",
     "react-select": "^5.10.1",
-    "sweetalert2": "^11.21.0",
+    "sweetalert2": "^11.6.13",
     "zustand": "^5.0.4"
   },
   "devDependencies": {
