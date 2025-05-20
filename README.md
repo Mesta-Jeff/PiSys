@@ -10,12 +10,11 @@
 1.  [Objective](#objective)
 2.  [Core Features Implemented](#core-features-implemented)
 3.  [Additional Features Implemented](#additional-features-implemented)
-4.  [Bonus Features (Optional)](#bonus-features-optional)
-5.  [Tech Stack](#tech-stack)
-6.  [Setup and Installation](#setup-and-installation)
-7.  [Navigation Flow](#navigation-flow)
-8.  [Assumptions and Decisions Made](#assumptions-and-decisions-made)
-9.  [Potential Future Improvements (What you'd improve with more time)](#potential-future-improvements-what-youd-improve-with-more-time)
+4.  [Tech Stack](#tech-stack)
+5.  [Setup and Installation](#setup-and-installation)
+6.  [Navigation Flow](#navigation-flow)
+7.  [Assumptions and Decisions Made](#assumptions-and-decisions-made)
+8.  [Potential Future Improvements (What you'd improve with more time)](#potential-future-improvements-what-youd-improve-with-more-time)
 
 ## Objective
 
