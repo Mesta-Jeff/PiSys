@@ -212,14 +212,34 @@ const ProductPage = () => {
     let price = document.getElementById('price').value.trim();
     const description = document.getElementById('description').value.trim();
 
-    if (!name || !price || !selectedCategory) {
-      Swal.fire({ icon: 'error', title: 'Attention Please!', text: 'Please fill all the fields and it is required', });
+    // Collect missing fields
+    const missingFields = [];
+    if (!name) missingFields.push('Name');
+    if (!price) missingFields.push('Price');
+    if (!selectedCategory) missingFields.push('Category');
+
+    if (missingFields.length > 0) {
+      Swal.fire({ icon: 'error', title: 'Missing Fields!', text: `Please fill the following required field(s): ${missingFields.join(', ')}`, });
       return;
     }
 
     // Sanitize price input
     if (price.startsWith('.')) price = '0' + price;
     if (price.endsWith('.')) price = price + '00';
+
+
+    // ❗ Check for duplicate product (by name and category)
+    const categoryValue = selectedCategory?.value;
+    const duplicateExists = PRODUCT_LIST.some(item =>
+      item.tableRow?.Name?.toLowerCase() === name &&
+      item.tableRow?.Category === categoryValue
+    );
+
+    if (duplicateExists) {
+      Swal.fire({ icon: 'warning', title: 'Duplicate Detected!', text: 'A product with this name and category already exists.', });
+      return;
+    }
+
 
     // Disable the button and show loading indicator
     setIsSaving(true);
